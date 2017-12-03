@@ -3,6 +3,6 @@ Using a LabJack to control a SparkFun [LED Strip](https://www.sparkfun.com/produ
 
 Compile and run with 
 ```
-$ gcc lj.c u3.c labjackusb.c -o cff_c `pkg-config --libs --cflags libusb-1.0`
+$ g++ -x c labjackusb.c u3.c -x c++ lj.cpp Adafruit_NeoPixel.cpp -o cff `pkg-config --libs --cflags libusb-1.0`
 $ ./cff_c
 ```
