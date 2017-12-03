@@ -19,12 +19,14 @@
 #ifndef ADAFRUIT_NEOPIXEL_H
 #define ADAFRUIT_NEOPIXEL_H
 #include <stdint.h>
+#include <stdbool.h>
 
 #if (ARDUINO >= 100)
  #include <Arduino.h>
 #else
- #include <labjackusb.h>
- //#include <pins_arduino.h>
+ #include <WProgram.h>
+ //#include <labjackusb.h>
+ #include <pins_arduino.h>
 #endif
 
 // The order of primary colors in the NeoPixel data stream can vary

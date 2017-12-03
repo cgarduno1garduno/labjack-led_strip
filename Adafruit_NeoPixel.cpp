@@ -33,6 +33,7 @@
 
 #include "Adafruit_NeoPixel.h"
 #include <stdint.h>
+#include <stdbool.h>
 
 #if defined(NRF52)
 #include "nrf.h"
